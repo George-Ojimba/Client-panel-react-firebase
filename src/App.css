@@ -1,33 +1,108 @@
-.App {
+body {
+  font-family: Raleway;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+/* spinner */
+.spinner {
+  height: 180px;
+  margin: auto;
+  display: block;
+}
+
+/* Card */
+.card {
+  width: 80%;
+  margin: auto;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+input {
+  width: 80%;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: transparent;
+  outline: 0;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Clients */
+.client-details .card {
+   margin-top: 4rem;
+}
+
+.client-details .card-header {
+  background-color:#fff;
+}
+
+.client-details .card-header h3 {text-transform: capitalize; font-family: "poppins"; }
+
+.profile{
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  margin-top:-40px;
+  margin-bottom: 2em;
+  
+}
+.profile:hover img {
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.48);
+  transform: translateY(-10px);
+
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background-position-x: center;
+  transition: all .4s ease ;
+}
+
+.head-font{
+  font-family: poppins;
+  font-weight: 400;
+}
+
+/* Login */
+
+.login .card {
+  background: rgba(251, 251, 251, 0.465);
+}
+
+.login input {
+ border:0.5px solid rgb(194, 194, 194);
+  box-shadow: 0 1px 3px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.11);
+ 
+}
+.login input:focus {
+  box-shadow: 0 1px 2px rgba(50, 50, 93, 0.11), 0 1px 5px rgba(0, 0, 0, 0.39);
+}
+
+.login-btn{
+  width: 100%;
+  margin-top:3.5rem;
+}
+.login-btn input {
+  width: 30%;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+#alert {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.settings input{
+  width: 20px;
+  padding:0;
+  margin:0;
 }
